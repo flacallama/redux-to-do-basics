@@ -13,7 +13,7 @@ export default function () {
     {
       id: 2,
       first: 'kyle',
-      last: 'barket',
+      last: 'barker',
       age: 30,
       description: 'thriving'
     },
