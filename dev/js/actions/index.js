@@ -5,3 +5,11 @@ export const selectUser = (user) => {
     payload: user
   }
 }
+
+export const selectDog = (dog) => {
+  console.log('you clicked on: ', dog.name);
+  return {
+    type: "DOG_SELECTED",
+    payload: dog
+  }
+}
