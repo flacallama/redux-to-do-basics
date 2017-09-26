@@ -36,8 +36,8 @@ function mapStateToProps(state){
 }
 
 function matchDispatchToProps(dispatch){
-  bindActionCreators({selectDog: selectDog}, dispatch)
+  return bindActionCreators({selectDog: selectDog}, dispatch)
 
 }
 
-export default connect(mapStateToProps)(DogList);
+export default connect(mapStateToProps, matchDispatchToProps)(DogList);

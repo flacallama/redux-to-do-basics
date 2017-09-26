@@ -5,12 +5,15 @@ class DogDetail extends Component {
 
 
   render () {
-    console.log('dog-details', this.props)
-
+    if(!this.props.dog){
+      return <h4>Pick yo dog...</h4>
+    }
     return (
       <div>
-        <p>{this.props.dog}</p>
-
+        <h2>{this.props.dog.name}</h2>
+        <h4>age: {this.props.dog.age}</h4>
+        <h4>breed: {this.props.dog.breed}</h4>
+        <h4>disposition: {this.props.dog.disposition}</h4>
       </div>
 
     )
@@ -21,6 +24,7 @@ class DogDetail extends Component {
 }
 
 function mapStateToProps(state) {
+  console.log('statefromdogdeets', state)
   return {
     dog: state.activeDog
   };

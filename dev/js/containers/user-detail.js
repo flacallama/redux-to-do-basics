@@ -12,7 +12,7 @@ class UserDetail extends Component {
       <div>
         <img src={this.props.user.image}></img>
         <h2>{this.props.user.first} {this.props.user.last}</h2>
-        <h4>age: {this.props.user.first}</h4>
+        <h4>age: {this.props.user.age}</h4>
         <h4>about: {this.props.user.description}</h4>
       </div>
     );
